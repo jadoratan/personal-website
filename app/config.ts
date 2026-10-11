@@ -83,7 +83,7 @@ export const NAV_LINKS = [
 // buttons — set `primary: true` for the filled/highlighted button.
 export const HERO = {
   greeting: "Hi, I'm",
-  bio:      "2nd year undergraduate studying Computer Science and Engineering at UCLA. Interested in full-stack development and AI/ML. Passionate about creating human-centered products that make life easier :).",
+  bio:      "But you can call me Audrey! I'm a second-year Computer Science and Engineering major at UCLA. I'm interested in full-stack development, software for physical systems, and machine learning. I'm especially passionate about user-centered designs that make life better :)",
   ctas: [
     { label: 'View my projects →', href: '#projects', primary: true  },
     { label: 'Get in touch',       href: '#contact',  primary: false },
@@ -110,11 +110,10 @@ export const EDUCATION: EducationEntry[] = [
     graduation: 'June 2029',
     courses: [
       'Data Structures & Algorithms',
-      'Operating Systems',
-      'Computer Networks',
-      'Machine Learning',
-      'Probability & Statistics',
-      'Software Engineering',
+      'Computer Architecture',
+      'Software Construction',
+      'Logic Design for Digital Systems',
+      'Intro to Electrical Engineering (Circuits)'
     ],
   },
 ];
@@ -135,30 +134,31 @@ export interface ExperienceEntry {
 
 export const EXPERIENCE: ExperienceEntry[] = [
   {
-    company:  'Acme Corporation',
-    role:     'Software Engineer Intern',
-    location: 'San Francisco, CA',
-    start:    'Jun 2025',
-    end:      'Aug 2025',
+    company:  'UCLA Digital and Technology Solutions',
+    role:     'Information Technology Consultant',
+    location: 'Los Angeles, CA',
+    start:    'Mar 2026',
+    end:      'Present',
     bullets: [
-      'Built a real-time dashboard in React and TypeScript, reducing incident response time by 40%.',
-      'Designed and deployed three REST API endpoints serving 50k requests per day.',
-      'Collaborated with the design team to ship a redesigned onboarding flow that improved conversion by 18%.',
+      'Resolve issues across Windows and Mac OS, including email clients, Microsoft Office 365, VPN software, MFA, and cloud-based file hosting platforms (Box, Google Drive) to facilitate work for faculty, staff, and students.',
+      'Document and track ~50 support tickets weekly, contributing to service desk documentation and knowledge base resources to improve resolution efficiency.',
+      'Mentor newer consultants in troubleshooting and resolution strategies, effective communication, and workplace procedures to ensure seamless knowledge transfer and sustained customer satisfaction.',
     ],
-    tech: ['React', 'TypeScript', 'Python', 'PostgreSQL', 'AWS'],
+    tech: ['ServiceNow', 'Microsoft Office 365', 'Cloud-based file hosting', 'VPN', 'MFA', 'OS', ],
   },
   {
-    company:  'UCLA Engineering',
-    role:     'Teaching Assistant — CS 33',
+    company:  'University of Southern California',
+    role:     'Machine Learning Researcher',
     location: 'Los Angeles, CA',
-    start:    'Sep 2024',
-    end:      'Dec 2024',
+    start:    'Jun 2024',
+    end:      'Aug 2024',
     bullets: [
-      'Led weekly discussion sections for 40 students covering systems programming in C.',
-      'Held office hours to assist students with debugging and conceptual questions.',
-      'Wrote and graded three programming assignments and two midterms.',
+      'Implemented estimator formula for zeroth-order stochastic gradient descent algorithm using PyTorch library to reduce memory usage without compromising model accuracy.',
+      'Preprocessed open-source binary classification image datasets used to train and assess model in NumPy.',
+      'Improved initial model accuracy by 17% by refining algorithm and fine-tuning hyperparameters.',
+      'Designed and presented research poster to 350+ attendees within USC Viterbi Engineering community.'
     ],
-    tech: ['C', 'x86 Assembly', 'Linux'],
+    tech: ['Python', 'OpenCV', 'PyTorch', 'scikit-learn', 'NumPy', 'MATLAB'],
   },
 ];
 
