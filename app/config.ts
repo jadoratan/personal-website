@@ -83,7 +83,7 @@ export const NAV_LINKS = [
 // buttons — set `primary: true` for the filled/highlighted button.
 export const HERO = {
   greeting: "Hi, I'm",
-  bio:      "But you can call me Audrey! I'm a second-year Computer Science and Engineering major at UCLA. I'm interested in full-stack development, software for physical systems, and machine learning. I'm especially passionate about user-centered designs that make life better :)",
+  bio:      "But call me Audrey! I'm a 2nd year Computer Science and Engineering major at UCLA. I'm interested in full-stack development, software for physical systems, and machine learning. I view tech as a powerful force we should steward for the good of others :)",
   ctas: [
     { label: 'View my projects →', href: '#projects', primary: true  },
     { label: 'Get in touch',       href: '#contact',  primary: false },
@@ -178,32 +178,31 @@ export interface ProjectEntry {
 
 export const PROJECTS: ProjectEntry[] = [
   {
-    name:        'StudySync',
-    description: 'A collaborative study-planning app that lets UCLA students share notes, schedule group sessions, and track progress together in real time.',
-    tech:        ['Next.js', 'TypeScript', 'Supabase', 'Tailwind CSS'],
-    github:      `${GITHUB_URL}/studysync`,
-    live:        'https://studysync.app',
-    featured:    true,
-  },
-  {
-    name:        'BruinBot',
-    description: 'A Discord bot that surfaces real-time UCLA dining menu data, library room availability, and bus schedules for 2,000+ active users.',
-    tech:        ['Node.js', 'Discord.js', 'REST APIs', 'Cron'],
-    github:      `${GITHUB_URL}/bruinbot`,
-    featured:    true,
-  },
-  {
-    name:        'PocketPortfolio',
-    description: 'A mobile-first stock portfolio tracker with custom alerts and a clean chart-based UI, built during a 24-hour hackathon.',
-    tech:        ['React Native', 'Expo', 'Recharts', 'Firebase'],
-    github:      `${GITHUB_URL}/pocketportfolio`,
-    live:        'https://pocketportfolio.dev',
+    name:        'ClubFinder',
+    description: '(In progress) A website that centralizes club information for students to explore and get plugged into student organizations more easily.',
+    tech:        ['React', 'HTML', 'CSS', 'Firebase'],
+    // github:      `${GITHUB_URL}/studysync`,
+    // live:        'https://studysync.app',
     featured:    false,
   },
   {
-    name:        'AutoGrade',
-    description: 'A command-line grading tool that runs student Python submissions against test suites in isolated Docker containers and produces structured reports.',
-    tech:        ['Python', 'Docker', 'Bash', 'SQLite'],
+    name:        'Project Mousie',
+    description: 'A hands-free computer mouse tailored to an end user with PD-related tremors. Developed algorithm and UI for software that executes mouse clicks triggered by user blinking.',
+    tech:        ['Python', 'OpenCV', 'ttkbootstrap'],
+    github:      `${GITHUB_URL}/project-mousie`,
+    featured:    true,
+  },
+  {
+    name:        'ML Research at USC',
+    description: 'Estimator for zeroth-order stochastic gradient descent algorithm developed by Devansh Gupta, my mentor at USC. Includes training and comparison of existing models to gauge performance.',
+    tech:        ['Python', 'NumPy', 'scikit-learn', 'PyTorch'],
+    github:      `${GITHUB_URL}/shine-final`,
+    featured:    false,
+  },
+  {
+    name:        'Delay Relay',
+    description: 'A website displaying the analysis of a flight delay dataset, including data visualizations and ML model performance.',
+    tech:        ['Python', 'HTML', 'CSS', 'JavaScript'],
     github:      `${GITHUB_URL}/autograde`,
     featured:    false,
   },
@@ -223,7 +222,7 @@ export const SOCIAL_LINKS = [
 // Resume". If you don't want to show a resume link, delete that entry.
 export const CONTACT = {
   email: ME.email,
-  blurb: "I'm actively looking for internships and new-grad roles starting 2026. If you're working on something interesting or just want to chat, my inbox is always open.",
+  blurb: "I'm actively looking for internships starting 2027. If you're working on something interesting or just want to chat, my inbox is always open.",
   links: [
     { label: 'Email',    href: EMAIL_HREF,     display: ME.email                         },
     { label: 'GitHub',   href: GITHUB_URL,     display: `github.com/${ME.github}`        },
@@ -236,7 +235,7 @@ export const CONTACT = {
 // `columns` renders as link groups. The Resume link here reuses
 // ME.resumePath, so it stays in sync with CONTACT automatically.
 export const FOOTER = {
-  tagline: "UCLA Computer Science student building things for the web.",
+  tagline: "UCLA Computer Science student building things for good.",
   columns: [
     {
       heading: 'Portfolio',

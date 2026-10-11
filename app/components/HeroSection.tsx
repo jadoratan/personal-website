@@ -87,10 +87,11 @@ export function HeroSection() {
             Or remove the hero-text and go fully visual like the original.
           */}
           <div className="character-figure">
-            <div className="character-placeholder">
+            <img src="/headshot.jpg" alt="" className="character-img" />
+            {/* <div className="character-placeholder">
               <span role="img" aria-hidden="true">🧑‍💻</span>
               <small>Your photo here</small>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
