@@ -186,6 +186,14 @@ export const PROJECTS: ProjectEntry[] = [
     featured:    false,
   },
   {
+    name:        'GitHub Portfolio',
+    description: 'Retired personal website. Currently functions as an aesthetic version of my GitHub profile.',
+    tech:        ['HTML', 'CSS', 'JavaScript'],
+    github:      `${GITHUB_URL}/github-portfolio`,
+    live:        'https://jadoratan.github.io/github-portfolio/',
+    featured:    true,
+  },
+  {
     name:        'Project Mousie',
     description: 'A hands-free computer mouse tailored to an end user with PD-related tremors. Developed algorithm and UI for software that executes mouse clicks triggered by user blinking.',
     tech:        ['Python', 'OpenCV', 'ttkbootstrap'],
@@ -197,14 +205,15 @@ export const PROJECTS: ProjectEntry[] = [
     description: 'Estimator for zeroth-order stochastic gradient descent algorithm developed by Devansh Gupta, my mentor at USC. Includes training and comparison of existing models to gauge performance.',
     tech:        ['Python', 'NumPy', 'scikit-learn', 'PyTorch'],
     github:      `${GITHUB_URL}/shine-final`,
-    featured:    false,
+    featured:    true,
   },
   {
     name:        'Delay Relay',
     description: 'A website displaying the analysis of a flight delay dataset, including data visualizations and ML model performance.',
     tech:        ['Python', 'HTML', 'CSS', 'JavaScript'],
-    github:      `${GITHUB_URL}/autograde`,
-    featured:    false,
+    github:      `${GITHUB_URL}/delay-relay`,
+    live:        'https://jadoratan.github.io/delay-relay/',
+    featured:    true,
   },
 ];
 
